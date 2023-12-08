@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+<style>
+
+input[type=text]{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+body{
+    /* background-image: {{url_for('static',filename='new.PNG')}} ; */
+   background-color: purple;
+    background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.myform
+{
+    
+    background-color: black;
+}
+
+#p1
+{
+color:rgb(253, 253, 253)
+}
+</style>
+ </head>
+<body>
+<center> <img src={{url_for('static',filename='new.PNG')}}  alt="NO image" ></center><br>
+
+<header>
+<h1 style="color:rgb(224, 15, 15);"> <center><U>FAKE NEWS DETECTION<u> </h1><br>
+</header>
+
+
+<form  style="align-items: center; display: flex;justify-content: center;">
+
+  <fieldset style="color: rgb(240, 255, 249);">
+    <legend style="color:rgb(241, 241, 241)"> NEWS DETECTION MODEL</legend><br>
+    <h3 style="text-align: center;">ARTICLE</h3>
+    <textarea name="article" id="article" cols="30" rows="10" >{{news}}</textarea>
+    <div style="text-align: center;">
+      <button type="submit" style="text-align: center;">Predict news</button>
+    </div>
+
+    <div style="text-align: center;">
+        <p style="font-size: 30px ; color: red;">{{ result }}</p>
+    </div>
+
+    </fieldset>
+
+
+
+</form>
+
+    
+
+<h2 id="p1">Contact Us
+</h2>
+<ul style="color:rgb(252, 255, 255);">
+<li>Email : gauravrawat8433022@gmail.com </li>
+<li>Mobile no : 75635XXXX</li>
+</ul>
+
+
+</body>
+</html>
